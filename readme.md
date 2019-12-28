@@ -107,6 +107,19 @@ GEOMETRY_GIT_GREP=ack               # define which grep-like tool to use (By def
 GEOMETRY_GIT_NO_COMMITS_MESSAGE=""  # hide the 'no commits' message in new repositories
 GEOMETRY_GIT_TIME_DETAILED=true     # show full time (e.g. `12h 30m 53s`) instead of the coarsest interval (e.g. `12h`)
 ```
+### geometry_vi
+
+Adds a customizable vi mode indicator to the prompt which displays
+whether the shell is in insert or normal mode. ZSH can be configured
+to use vi-like bindings by calling `bindkey -v` either at the command
+line or in your `.zshrc`.
+
+```shell
+GEOMETRY_VI_INSERT_MODE="<INSERT>"  # The textual indicator for insert-mode.
+GEOMETRY_VI_INSERT_COLOR=yellow     # The color of the insert-mode indicator.
+GEOMETRY_VI_NORMAL_MODE="<NORMAL>"  # The textual indicator for normal-mode.
+GEOMETRY_VINORMAL_COLOR=white       # The color of the normal-mode indicator.
+```
 
 ![git_conflicts](/images/screenshots/git_conflicts.png)
 
